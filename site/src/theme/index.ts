@@ -6,11 +6,13 @@ import darkBlue from "./darkBlue";
 import type { NewTheme } from "./experimental";
 import type { ExternalImageModeStyles } from "./externalImages";
 import light from "./light";
+import type { Permission } from "./permission";
 import type { Roles } from "./roles";
 
 export interface Theme extends MuiTheme {
 	experimental: NewTheme;
 	roles: Roles;
+	permission: Permission;
 	monaco: monaco.editor.IStandaloneThemeData;
 	externalImages: ExternalImageModeStyles;
 }
