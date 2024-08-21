@@ -172,7 +172,7 @@ message TelemetryEvent {
 	google.protobuf.Timestamp time = 2;
 	string application = 3;
 	Status status = 4;
-	string disconnection_reason = 5;
+	reserved 5;
 	ClientType client_type = 6;
 	string client_version = 19;
 	uint64 node_id_self = 7;
